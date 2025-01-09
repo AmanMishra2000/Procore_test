@@ -1,0 +1,21 @@
+get http://127.0.0.1:8000/
+
+###
+get "http://127.0.0.1:8000/import_projects?company_id=12345"
+
+###
+get http://127.0.0.1:8000/get_project/1
+
+###
+post http://127.0.0.1:8000/import_project
+Content-Type: application/json
+
+  {
+    "id": 1,
+    "name": "Project One",
+    "status": "active"
+
+  }
+
+###
+get http://127.0.0.1:8000/connect
